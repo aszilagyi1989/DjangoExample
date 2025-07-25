@@ -26,7 +26,9 @@ SECRET_KEY = 'django-insecure-12eql5mh2(74k=0ne$o3l3vb^57cj@lnx7&bf@jz(773t=!(54
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['testingstatisticsofhungary.onrender.com']
+
+# Invalid HTTP_HOST header: 'teststatisticsofhungary.onrender.com'. You may need to add 'teststatisticsofhungary.onrender.com' to ALLOWED_HOSTS.
 
 
 # Application definition
