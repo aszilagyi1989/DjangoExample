@@ -28,7 +28,7 @@ DEBUG = False
 
 ALLOWED_HOSTS = ['djangoexample-production.up.railway.app', 'testingstatisticsofhungary.onrender.com', '127.0.0.1']
 
-CSRF_TRUSTED_ORIGINS = ['djangoexample-production.up.railway.app', 'testingstatisticsofhungary.onrender.com']
+CSRF_TRUSTED_ORIGINS = ['https://djangoexample-production.up.railway.app', 'https://testingstatisticsofhungary.onrender.com']
 
 # Invalid HTTP_HOST header: 'teststatisticsofhungary.onrender.com'. You may need to add 'teststatisticsofhungary.onrender.com' to ALLOWED_HOSTS.
 
