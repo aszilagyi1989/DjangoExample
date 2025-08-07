@@ -30,9 +30,6 @@ ALLOWED_HOSTS = ['djangoexample-production.up.railway.app', 'testingstatisticsof
 
 CSRF_TRUSTED_ORIGINS = ['https://djangoexample-production.up.railway.app', 'https://testingstatisticsofhungary.onrender.com']
 
-# Invalid HTTP_HOST header: 'teststatisticsofhungary.onrender.com'. You may need to add 'teststatisticsofhungary.onrender.com' to ALLOWED_HOSTS.
-
-
 # Application definition
 
 INSTALLED_APPS = [
@@ -123,10 +120,8 @@ USE_TZ = True
 STATIC_URL = 'static/'
 
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'static')
+   os.path.join(BASE_DIR, 'static')
     ]
-
-STATIC_ROOT = BASE_DIR / 'staticfiles'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
