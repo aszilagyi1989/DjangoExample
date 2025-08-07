@@ -1,21 +1,23 @@
 {% extends 'layout.html' %}
 
 {% block title %}
-    Posts List
+    Posts
 {% endblock %}
 
 {% block content %}
-    <h1>Posts List</h1>
-{% endblock %}
+    <section>
+        <h1>Posts</h1>
 
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset = "UTF-8">
-    <meta name = "viewport" content = "width = device-width" initial-scale = 1>
-    <title>Posts List</title>
-</head>
-<body>
-    <h1>Posts List</h1>
-</body>
-</html> -->
+        {% for post in posts %}
+            <article class = "post">
+                <h2>
+                    <a href = "{% url 'posts:page' slug=post.slug %}">
+                        {{ post.title }}
+                    </a>
+                </h2>
+                <p>{{ post.date }}</p>
+                <p>{{ post.body }}</p>
+            </article>
+        {% endfor%}
+    </section>
+{% endblock %}

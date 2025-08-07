@@ -8,8 +8,9 @@ body {
   min-height: 100vh;
   /*display: grid;*/
   /*background-color: black;*/
-  background-color: #2171B5;
-  color: whitesmoke;
+  background-color: #FFFF8F;
+  /*color: whitesmoke;*/
+  color: black;
   font-size: 3rem;
   display: flex;
   flex-flow: column;
@@ -18,7 +19,8 @@ body {
 
 nav {
   padding: 1rem;
-  background-color: #44B78B;
+  /*background-color: #44B78B;*/
+  background-color: #2171B5;
   color: white;
   font-size: 2.5rem;
 }
@@ -29,8 +31,14 @@ main {
   place-content: center;
 }
 
-h1, p {
-  text-align: center;
+h1, h2 {
+  font-size: 2.5rem;
+  /*text-align: center;*/
+}
+
+p {
+  font-size: 1rem;
+  /*text-align: center;*/
 }
 
 a {
@@ -40,4 +48,10 @@ a {
 
 a:hover {
   opacity: .85;
+}
+
+.banner {
+  display: block;
+  width: 100%;
+  max-width: 800px;
 }
