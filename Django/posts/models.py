@@ -1,4 +1,5 @@
 from django.db import models
+from PIL import ImageTk, Image
 
 # Create your models here.
 
