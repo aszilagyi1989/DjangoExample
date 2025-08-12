@@ -1,5 +1,5 @@
 from django.db import models
-import Image
+from PIL import image
 
 # Create your models here.
 
