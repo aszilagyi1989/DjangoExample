@@ -12,9 +12,9 @@ body {
   /*color: whitesmoke;*/
   color: black;
   font-size: 3rem;
-  /*display: flex;
+  display: flex;
   flex-flow: column;
-  place-content: center;*/
+  place-content: center;
 }
 
 nav {
