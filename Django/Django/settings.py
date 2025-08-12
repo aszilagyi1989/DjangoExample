@@ -28,7 +28,7 @@ DEBUG = False
 
 ALLOWED_HOSTS = ['testingstatisticsofhungary.onrender.com', '127.0.0.1']
 
-CSRF_TRUSTED_ORIGINS = ['https://djangoexample-production.up.railway.app', 'https://testingstatisticsofhungary.onrender.com']
+CSRF_TRUSTED_ORIGINS = ['https://testingstatisticsofhungary.onrender.com']
 
 # Application definition
 
