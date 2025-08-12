@@ -1,5 +1,4 @@
 from django.db import models
-from PIL import image
 
 # Create your models here.
 
@@ -8,7 +7,7 @@ class Post(models.Model):
     body = models.TextField()
     slug = models.SlugField()
     date = models.DateTimeField(auto_now_add = True)
-    banner = models.ImageField(default = 'fallback.png', blank = True)
+    banner = models.FileField(default = 'fallback.png', blank = True) # Image
 
     def __str__(self):
         return self.title
