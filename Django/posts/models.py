@@ -1,4 +1,5 @@
 from django.db import models
+from django.contrib.auth.models import User
 from .validators import validate_file_extension
 
 # Create your models here.
@@ -9,6 +10,9 @@ class Post(models.Model):
     slug = models.SlugField()
     date = models.DateTimeField(auto_now_add = True)
     banner = models.FileField(default = 'fallback.png', blank = True, validators=[validate_file_extension]) # Image
+    author = models.ForeignKey(User, 
+                               on_delete = models.CASCADE, 
+                               default = None)
 
     def __str__(self):
         return self.title
